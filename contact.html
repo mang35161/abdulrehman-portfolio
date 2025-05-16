@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact | Abdul Rehman</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet" />
+  <style>
+    /* Same styles as index.html */
+    * { margin:0; padding:0; box-sizing:border-box; }
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #1a1a1a, #0d0d0d);
+      color: #eee;
+      min-height: 100vh;
+      padding: 40px 20px;
+    }
+    header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    nav a {
+      color: #00acee;
+      margin: 0 15px;
+      font-weight: 600;
+      text-decoration: none;
+      position: relative;
+    }
+    nav a::after {
+      content: '';
+      position: absolute;
+      width: 0; height: 2px;
+      background: #00acee;
+      bottom: -6px; left: 50%;
+      transition: 0.3s;
+      transform: translateX(-50%);
+    }
+    nav a:hover {
+      color: #1da1f2;
+    }
+    nav a:hover::after {
+      width: 100%;
+    }
+    h1 {
+      font-weight: 600;
+      font-size: 2.6rem;
+      margin-bottom: 25px;
+    }
+    form {
+      max-width: 600px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+    }
+    label {
+      font-weight: 600;
+      font-size: 1rem;
+      margin-bottom: 6px;
+    }
+    input, textarea {
+      padding: 12px;
+      border-radius: 8px;
+      border: none;
+      font-size: 1rem;
+      font-family: 'Poppins', sans-serif;
+      resize: vertical;
+    }
+    textarea {
+      min-height: 120px;
+    }
+    button {
+      background-color: #00acee;
+      color: #111;
+      font-weight: 700;
+      padding: 14px;
+      border: none;
+      border-radius: 25px;
+      font-size: 1.1rem;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    button:hover {
+      background-color: #1da1f2;
+    }
+    footer {
+      margin-top: 60px;
+      text-align: center;
+      color: #555;
+      font-size: 0.9rem;
+      border-top: 1px solid #333;
+      padding: 15px 0;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="contact.html" style="color:#1da1f2;">Contact</a>
+      <a href="privacy.html">Privacy</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Contact Me</h1>
+    <form action="mailto:mang35161@gmail.com" method="post" enctype="text/plain">
+      <label for="name">Your Name</label>
+      <input id="name" name="name" type="text" required />
+      
+      <label for="email">Your Email</label>
+      <input id="email" name="email" type="email" required />
+      
+      <label for="message">Message</label>
+      <textarea id="message" name="message" required></textarea>
+      
+      <button type="submit">Send Message</button>
+    </form>
+  </main>
+
+  <footer>
+    &copy; 2025 Abdul Rehman. All rights reserved.
+  </footer>
+</body>
+</html>

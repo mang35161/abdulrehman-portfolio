@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>About | Abdul Rehman</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet" />
+  <style>
+    /* Same styles as index.html for consistency */
+    * { margin:0; padding:0; box-sizing:border-box; }
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #1a1a1a, #0d0d0d);
+      color: #eee;
+      min-height: 100vh;
+      padding: 40px 20px;
+    }
+    header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    nav a {
+      color: #00acee;
+      margin: 0 15px;
+      font-weight: 600;
+      text-decoration: none;
+      position: relative;
+    }
+    nav a::after {
+      content: '';
+      position: absolute;
+      width: 0; height: 2px;
+      background: #00acee;
+      bottom: -6px; left: 50%;
+      transition: 0.3s;
+      transform: translateX(-50%);
+    }
+    nav a:hover {
+      color: #1da1f2;
+    }
+    nav a:hover::after {
+      width: 100%;
+    }
+    h1 {
+      font-weight: 600;
+      font-size: 2.6rem;
+      margin-bottom: 25px;
+    }
+    p {
+      font-weight: 300;
+      font-size: 1.2rem;
+      max-width: 700px;
+      margin: 0 auto 40px;
+      line-height: 1.6;
+      color: #ccc;
+    }
+    footer {
+      margin-top: 60px;
+      text-align: center;
+      color: #555;
+      font-size: 0.9rem;
+      border-top: 1px solid #333;
+      padding: 15px 0;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html" style="color:#1da1f2;">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="privacy.html">Privacy</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>About Abdul Rehman</h1>
+    <p>
+      Hello! I am Abdul Rehman, a student passionate about technology and web development.
+      I enjoy learning new skills and sharing my journey online through this website.
+    </p>
+    <p>
+      This portfolio showcases my skills, projects, and ways to connect with me.
+      I am continuously improving and working on exciting projects to grow my knowledge.
+    </p>
+  </main>
+
+  <footer>
+    &copy; 2025 Abdul Rehman. All rights reserved.
+  </footer>
+</body>
+</html>
